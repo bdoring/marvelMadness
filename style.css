@@ -1,0 +1,299 @@
+*{
+  margin: 0;
+}
+
+.html, body{
+  height: 100%;
+  width: 100%;
+}
+
+#my-nav{
+  background: #BE1F24;
+  padding-left: 5px;
+}
+
+#nav-mobile{
+  height: 65px;
+}
+
+.my-row{
+  justify-content: center;
+  display: flex;
+  min-width: 100%;
+}
+
+#character-name{
+  margin-top: 260px;
+  font-size: 18px;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-align: center;
+}
+
+h3{
+  padding-left: 20px;
+  /*color: DarkGoldenRod;*/
+  color: #be1f24
+}
+
+
+.my-deck{
+  border-radius: 5px;
+  background-color: black;
+  height: 300px;
+  width: 250px;
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+  margin: 10px;
+}
+
+.empty-deck{
+  border-radius: 5px;
+  background-color: white;
+  height: 300px;
+  width: 250px;
+  margin: 10px;
+  border: 1px solid grey;
+  padding-top: 125px;
+  text-align: center;
+}
+
+.my-own-deck{
+  padding-right: 15px;
+}
+
+#make-my-own-deck, #default-deck{
+  background-color: #f7584d;
+  margin: 5px;
+}
+
+
+
+#title{
+  font-weight: bolder;
+  font-size: 30px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#break-row{
+  margin: 0;
+  height: 5px;
+}
+
+.my-card-splash{
+  height: 400px;
+  width: 400px;
+  visibility: hidden;
+  justify-content: center;
+  /*display: flex;*/
+}
+
+.my-pic{
+  width: 100%;
+  height: 100%;
+}
+
+.my-deck-list{
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#deck{
+  text-align: center;
+}
+
+#card{
+  max-height: 100%;
+}
+
+/*#my-input{
+  border-bottom: 0 solid white;
+  box-shadow: 0 1px 0 0 white;
+}*/
+
+#my-input:focus{
+  border-bottom: 0 solid white;
+  box-shadow: 0 1px 0 0 white;
+}
+
+#lupa{
+  color: white;
+}
+
+/*#dropdown{
+  color: red;
+}*/
+
+#second-half{
+  padding-top: 45px;
+}
+
+
+#first-half, #second-half{
+  justify-content: center;
+  margin: 0;
+  min-height: 100%;
+}
+
+/*Memory Game Page*/
+.my-card{
+  position: relative;
+  border-radius: 5px;
+  height: 250px;
+  width: 200px;
+  margin: 5px;
+  border: 1px solid black;
+}
+
+.my-card:hover{
+  cursor: pointer;
+  box-shadow: 0 0 8px 5px #f7584d;
+  /*box-shadow: 0 0 8px 5px DarkGoldenRod;*/
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card-back{
+  border-radius: 5px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.card-front,
+.card-back {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 0.3s;
+          transition: transform 0.3s;
+}
+
+.card-front {
+  background-color: #ff5078;
+}
+
+.card-back {
+  background-color: #1e1e1e;
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.my-card.flipped .card-front {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.my-card.flipped .card-back {
+  -webkit-transform: rotateY(0);
+          transform: rotateY(0);
+}
+
+.character-name-display{
+  margin-top: 205px;
+  font-size: 18px;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+img{
+  height: 100%;
+  width: 100%;
+}
+
+.my-row{
+  display: flex;
+  justify-content: center;
+}
+
+#splash-play{
+  background: #f7584d;
+}
+
+/*Splash-Page*/
+.splash-page{
+  display: block;
+  font-size: 100px;
+  margin-top: 10px;
+  justify-content: center;
+  /*height: 800px;*/
+  height: 800px;
+}
+
+/*Stats Page*/
+.my-stats-page{
+  margin: 5px auto;
+  /*border: 1px solid grey;
+  border-radius: 5px;
+  width: 1000px;*/
+}
+
+.my-stats{
+  border: 1px solid grey;
+  border-radius: 5px;
+  width: 1000px;
+  margin: 5px auto;
+}
+
+.pow{
+  background-image: url(pow.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  /*height: 386px;
+  width: 500px;*/
+  height: 0;
+  width: 0;
+  margin: 0 auto;
+}
+
+.about{
+  background-image: url(about.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 570px;
+  width: 800px;
+  padding-top: 450px;
+  padding-left: 5px;
+  margin: 40px auto;
+  /*box-shadow: 0 0 15px 1px grey;*/
+  /*border: 1px solid black;*/
+  border-radius: 5px;
+}
+
+.about-me{
+  justify-content: center;
+}
+
+.my-links{
+  margin-right: 5px;
+}
+
+#my-location{
+  margin-bottom: 10px;
+}
+
+#location, #github, #linkedin{
+  vertical-align:text-bottom;
+}
+
+#my-name{
+  font-size: 30px;
+}
+
+#github{
+  width: 22px;
+  height: 22px;
+}
+
+#linkedin{
+  width: 27px;
+  height: 20px;
+}

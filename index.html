@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MarvelMadness</title>
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script src="./node_modules/js-md5/src/md5.js">
+  </script>
+    <script src="./script.js"></script>
+    <!-- <script src="./test.js"></script> -->
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  </head>
+  <body>
+    <!-- <ul id="dropdown1" class="dropdown-content">
+      <li><a id="dropdown" href="#!">Flashcards</a></li>
+      <li><a id="dropdown" href="#!">Memory Game</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">three</a></li>
+    </ul> -->
+    <nav>
+      <div id="my-nav" class="nav-wrapper">
+        <a href="#" class="brand-logo">MarvelMadness</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li>
+                      <div class="center row">
+                         <div class="col s12 " >
+                           <div class="row" id="topbarsearch">
+                             <div class="input-field col s6 s12">
+                               <i id="lupa" class="material-icons prefix">search</i>
+                               <input type="text" class="autocomplete" placeholder="search" id="my-input">
+                               </div>
+                             </div>
+                           </div>
+                         </div>
+                     </li>
+            <li id="my-deck"><a href="#">My Deck</a></li>
+            <li id="play" class="play"><a class="dropdown-button" href="#" data-activates="dropdown1">Play!</a></li>
+            <!-- <i class="material-icons right">arrow_drop_down</i> -->
+            <li id="about-btn"><a href="#">About Me</a></li>
+          </ul>
+      </div>
+    </nav>
+
+
+    <div class="deck-page">
+
+
+        <div id="break-row" class="row">
+
+        </div>
+        <div id="my-row" class="row">
+          <div id="first-half" class="col m6">
+
+
+              <div class="my-own-deck">
+                <h3>
+                  My Deck
+                  <a id="make-my-own-deck" class="btn-large right" href="#">Make My Own Deck</a>
+                  <a id="default-deck" class="btn-large right" href="#">Default Deck</a>
+                </h3>
+              </div>
+
+
+            <div class="my-deck-list">
+              <div class="my-deck z-depth-5"></div>
+              <div class="my-deck z-depth-5"></div>
+              <div class="my-deck z-depth-5"></div>
+              <div class="my-deck z-depth-5"></div>
+              <div class="my-deck z-depth-5"></div>
+              <div class="my-deck z-depth-5"></div>
+              <div class="my-deck z-depth-5"></div>
+              <div class="my-deck z-depth-5"></div>
+              <div class="my-deck z-depth-5"></div>
+            </div>
+
+          </div>
+          <div id="second-half" class="col m6">
+            <!-- <div class="row"> -->
+              <div class="my-row">
+                <div class="my-card-splash">
+                  <div id="my-card-splash" class="card">
+                    <div class="card-image">
+                      <img src="" class="my-pic">
+                      <span id="title" class="card-title"></span>
+                    </div>
+                    <div class="card-content">
+                      <p></p>
+                    </div>
+                    <div class="card-action center">
+                      <a id="add-to-deck" href="#">Add to Deck</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+          </div>
+        </div>
+    </div>
+
+    <div class="my-stats-page center">
+      <div class="pow"></div>
+      <div class="my-stats z-depth-5">
+        <!-- <h5>Your Stats</h5> -->
+      </div>
+
+    </div>
+
+    <div class="game">
+      <div class="my-row">
+        <div class="my-card z-depth-5">
+          <div class="card-front"></div>
+          <div class="card-back"></div>
+        </div>
+        <div class="my-card">
+          <div class="card-front"></div>
+          <div class="card-back"></div>
+        </div>
+        <div class="my-card">
+          <div class="card-front"></div>
+          <div class="card-back"></div>
+        </div>
+        <div class="my-card">
+          <div class="card-front"></div>
+          <div class="card-back"></div>
+        </div>
+        <div class="my-card">
+          <div class="card-front"></div>
+          <div class="card-back"></div>
+        </div>
+        <div class="my-card">
+          <div class="card-front"></div>
+          <div class="card-back"></div>
+        </div>
+      </div>
+      <div class="my-row">
+        <div class="my-card">
+          <div class="card-front"></div>
+          <div class="card-back"></div>
+        </div>
+        <div class="my-card">
+          <div class="card-front"></div>
+          <div class="card-back"></div>
+        </div>
+        <div class="my-card">
+          <div class="card-front"></div>
+          <div class="card-back"></div>
+        </div>
+        <div class="my-card">
+          <div class="card-front"></div>
+          <div class="card-back"></div>
+        </div>
+        <div class="my-card">
+          <div class="card-front"></div>
+          <div class="card-back"></div>
+        </div>
+        <div class="my-card">
+          <div class="card-front"></div>
+          <div class="card-back"></div>
+        </div>
+      </div>
+      <div class="my-row">
+        <div class="my-card">
+          <div class="card-front"></div>
+          <div class="card-back"></div>
+        </div>
+        <div class="my-card">
+          <div class="card-front"></div>
+          <div class="card-back"></div>
+        </div>
+        <div class="my-card">
+          <div class="card-front"></div>
+          <div class="card-back"></div>
+        </div>
+        <div class="my-card">
+          <div class="card-front"></div>
+          <div class="card-back"></div>
+        </div>
+        <div class="my-card">
+          <div class="card-front"></div>
+          <div class="card-back"></div>
+        </div>
+        <div class="my-card">
+          <div class="card-front"></div>
+          <div class="card-back"></div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="splash-page center valign-wrapper">
+      <div class="">
+        <p>Welcome to MarvelMadness!</p>
+        <a id="splash-play" class="btn waves-effect play" href="#">PLAY!</a>
+      </div>
+
+    </div>
+
+    <div class="about hoverable">
+      <span id="my-name">Bárbara Doring</span>
+      <p id="my-location" ><i id="location" class="material-icons">location_on</i>Phoenix, Arizona</p>
+      <img id="github" src="GitHub-Mark-32px.png" alt="">
+      <a class="my-links" href="https://github.com/bdoring">/bdoring</a>
+      <img id="linkedin" src="In-Black-21px-R.png" alt="">
+      <a class="my-links" href="https://www.linkedin.com/in/barbaradoring/">/in/barbaradoring</a>
+    </div>
+
+
+  </body>
+</html>

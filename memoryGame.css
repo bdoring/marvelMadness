@@ -1,0 +1,50 @@
+*{
+  margin: 0;
+}
+
+html, body{
+  height: 100%;
+}
+
+.my-row{
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+}
+
+img{
+  height: 100%;
+  width: 100%;
+}
+
+p{
+  visibility: hidden;
+  margin-top: 180px;
+}
+
+.my-card{
+  background-image: url(./marvel.jpg);
+  background-color: black;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 5px;
+  height: 250px;
+  width: 200px;
+  margin: 5px;
+  border: 1px solid black;
+}
+
+.my-card:hover{
+  box-shadow: 0 0 8px 5px DarkGoldenRod;
+  cursor: pointer;
+}
+
+.my-card-display{
+  font-size: 20px;
+  color: white;
+  background-position: top;
+  text-align: center;
+  /*padding-top: 210px;*/
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
